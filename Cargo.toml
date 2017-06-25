@@ -1,0 +1,21 @@
+[package]
+name = "engine9"
+version = "0.1.0"
+authors = ["yelikdev@gmail.com <Kiley Owen>"]
+
+[dependencies]
+cgmath = "*"
+log = "*"
+env_logger = "*"
+rustc-serialize = "*"
+gfx = "*"
+gfx_device_gl = "*"
+# gfx_window_sdl = "*"
+gfx_window_glutin = "*"
+glutin = "*"
+image = "*"
+# sdl2 = "*"
+find_folder = "*"
+specs = "*"
+time = "*"
+rand = "*"
