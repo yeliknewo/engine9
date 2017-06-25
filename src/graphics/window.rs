@@ -1,6 +1,6 @@
 use gfx::Resources;
 use gfx::handle::{DepthStencilView, RenderTargetView};
-use graphics::{ColorFormat, DepthFormat, ng_glutin};
+use graphics::{ColorFormat, DepthFormat, e9_glutin};
 
 pub struct GfxWindow<W, T, D, F, R>
 where
@@ -14,7 +14,7 @@ where
     extras: T,
 }
 
-impl<T, D, F, R> GfxWindow<ng_glutin::Window, T, D, F, R>
+impl<T, D, F, R> GfxWindow<e9_glutin::Window, T, D, F, R>
 where
     R: Resources,
 {

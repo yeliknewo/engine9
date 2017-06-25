@@ -16,8 +16,10 @@ pub fn build_window(
         .with_dimensions(width, height)
         .with_vsync();
 
+    let events_loop = glutin::EventsLoop::new();
+
     let (window, device, factory, out_color, out_depth) =
-        gfx_window_glutin::init::<ColorFormat, DepthFormat>(builder);
+        gfx_window_glutin::init::<ColorFormat, DepthFormat>(builder, &events_loop);
 
     GfxWindow::new(out_color, out_depth, device, factory, window, ())
 }
